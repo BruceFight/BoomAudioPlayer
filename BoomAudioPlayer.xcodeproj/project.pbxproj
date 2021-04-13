@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A5980C826254BE000C19E1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5980C726254BE000C19E1A /* AppDelegate.swift */; };
+		2A5980CA26254BE000C19E1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5980C926254BE000C19E1A /* SceneDelegate.swift */; };
+		2A5980CC26254BE000C19E1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5980CB26254BE000C19E1A /* ViewController.swift */; };
+		2A5980CF26254BE000C19E1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5980CD26254BE000C19E1A /* Main.storyboard */; };
+		2A5980D126254BE100C19E1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5980D026254BE100C19E1A /* Assets.xcassets */; };
+		2A5980D426254BE100C19E1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5980D226254BE100C19E1A /* LaunchScreen.storyboard */; };
+		2A5980DF26254BE200C19E1A /* BoomAudioPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5980DE26254BE200C19E1A /* BoomAudioPlayerTests.swift */; };
+		2A5980EA26254BE200C19E1A /* BoomAudioPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5980E926254BE200C19E1A /* BoomAudioPlayerUITests.swift */; };
+		2A5980FB26254C4500C19E1A /* BoomAudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5980FA26254C4500C19E1A /* BoomAudioPlayerManager.swift */; };
+		2A59810026254DD500C19E1A /* BoomAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5980FF26254DD500C19E1A /* BoomAudioPlayer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A5980DB26254BE200C19E1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A5980BC26254BE000C19E1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A5980C326254BE000C19E1A;
+			remoteInfo = BoomAudioPlayer;
+		};
+		2A5980E626254BE200C19E1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A5980BC26254BE000C19E1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A5980C326254BE000C19E1A;
+			remoteInfo = BoomAudioPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A5980C426254BE000C19E1A /* BoomAudioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoomAudioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5980C726254BE000C19E1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A5980C926254BE000C19E1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2A5980CB26254BE000C19E1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2A5980CE26254BE000C19E1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A5980D026254BE100C19E1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A5980D326254BE100C19E1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A5980D526254BE100C19E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5980DA26254BE200C19E1A /* BoomAudioPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoomAudioPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5980DE26254BE200C19E1A /* BoomAudioPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoomAudioPlayerTests.swift; sourceTree = "<group>"; };
+		2A5980E026254BE200C19E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5980E526254BE200C19E1A /* BoomAudioPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoomAudioPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5980E926254BE200C19E1A /* BoomAudioPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoomAudioPlayerUITests.swift; sourceTree = "<group>"; };
+		2A5980EB26254BE200C19E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5980FA26254C4500C19E1A /* BoomAudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoomAudioPlayerManager.swift; sourceTree = "<group>"; };
+		2A5980FF26254DD500C19E1A /* BoomAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoomAudioPlayer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A5980C126254BE000C19E1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5980D726254BE200C19E1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5980E226254BE200C19E1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A5980BB26254BE000C19E1A = {
+			isa = PBXGroup;
+			children = (
+				2A5980C626254BE000C19E1A /* BoomAudioPlayer */,
+				2A5980DD26254BE200C19E1A /* BoomAudioPlayerTests */,
+				2A5980E826254BE200C19E1A /* BoomAudioPlayerUITests */,
+				2A5980C526254BE000C19E1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A5980C526254BE000C19E1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A5980C426254BE000C19E1A /* BoomAudioPlayer.app */,
+				2A5980DA26254BE200C19E1A /* BoomAudioPlayerTests.xctest */,
+				2A5980E526254BE200C19E1A /* BoomAudioPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A5980C626254BE000C19E1A /* BoomAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				2A5980C726254BE000C19E1A /* AppDelegate.swift */,
+				2A5980C926254BE000C19E1A /* SceneDelegate.swift */,
+				2A5980CB26254BE000C19E1A /* ViewController.swift */,
+				2A5980FF26254DD500C19E1A /* BoomAudioPlayer.swift */,
+				2A5980FA26254C4500C19E1A /* BoomAudioPlayerManager.swift */,
+				2A5980CD26254BE000C19E1A /* Main.storyboard */,
+				2A5980D026254BE100C19E1A /* Assets.xcassets */,
+				2A5980D226254BE100C19E1A /* LaunchScreen.storyboard */,
+				2A5980D526254BE100C19E1A /* Info.plist */,
+			);
+			path = BoomAudioPlayer;
+			sourceTree = "<group>";
+		};
+		2A5980DD26254BE200C19E1A /* BoomAudioPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A5980DE26254BE200C19E1A /* BoomAudioPlayerTests.swift */,
+				2A5980E026254BE200C19E1A /* Info.plist */,
+			);
+			path = BoomAudioPlayerTests;
+			sourceTree = "<group>";
+		};
+		2A5980E826254BE200C19E1A /* BoomAudioPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2A5980E926254BE200C19E1A /* BoomAudioPlayerUITests.swift */,
+				2A5980EB26254BE200C19E1A /* Info.plist */,
+			);
+			path = BoomAudioPlayerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A5980C326254BE000C19E1A /* BoomAudioPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A5980EE26254BE200C19E1A /* Build configuration list for PBXNativeTarget "BoomAudioPlayer" */;
+			buildPhases = (
+				2A5980C026254BE000C19E1A /* Sources */,
+				2A5980C126254BE000C19E1A /* Frameworks */,
+				2A5980C226254BE000C19E1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoomAudioPlayer;
+			productName = BoomAudioPlayer;
+			productReference = 2A5980C426254BE000C19E1A /* BoomAudioPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A5980D926254BE200C19E1A /* BoomAudioPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A5980F126254BE200C19E1A /* Build configuration list for PBXNativeTarget "BoomAudioPlayerTests" */;
+			buildPhases = (
+				2A5980D626254BE200C19E1A /* Sources */,
+				2A5980D726254BE200C19E1A /* Frameworks */,
+				2A5980D826254BE200C19E1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A5980DC26254BE200C19E1A /* PBXTargetDependency */,
+			);
+			name = BoomAudioPlayerTests;
+			productName = BoomAudioPlayerTests;
+			productReference = 2A5980DA26254BE200C19E1A /* BoomAudioPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A5980E426254BE200C19E1A /* BoomAudioPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A5980F426254BE200C19E1A /* Build configuration list for PBXNativeTarget "BoomAudioPlayerUITests" */;
+			buildPhases = (
+				2A5980E126254BE200C19E1A /* Sources */,
+				2A5980E226254BE200C19E1A /* Frameworks */,
+				2A5980E326254BE200C19E1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A5980E726254BE200C19E1A /* PBXTargetDependency */,
+			);
+			name = BoomAudioPlayerUITests;
+			productName = BoomAudioPlayerUITests;
+			productReference = 2A5980E526254BE200C19E1A /* BoomAudioPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A5980BC26254BE000C19E1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					2A5980C326254BE000C19E1A = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					2A5980D926254BE200C19E1A = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 2A5980C326254BE000C19E1A;
+					};
+					2A5980E426254BE200C19E1A = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 2A5980C326254BE000C19E1A;
+					};
+				};
+			};
+			buildConfigurationList = 2A5980BF26254BE000C19E1A /* Build configuration list for PBXProject "BoomAudioPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A5980BB26254BE000C19E1A;
+			productRefGroup = 2A5980C526254BE000C19E1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A5980C326254BE000C19E1A /* BoomAudioPlayer */,
+				2A5980D926254BE200C19E1A /* BoomAudioPlayerTests */,
+				2A5980E426254BE200C19E1A /* BoomAudioPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A5980C226254BE000C19E1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5980D426254BE100C19E1A /* LaunchScreen.storyboard in Resources */,
+				2A5980D126254BE100C19E1A /* Assets.xcassets in Resources */,
+				2A5980CF26254BE000C19E1A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5980D826254BE200C19E1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5980E326254BE200C19E1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A5980C026254BE000C19E1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5980CC26254BE000C19E1A /* ViewController.swift in Sources */,
+				2A5980C826254BE000C19E1A /* AppDelegate.swift in Sources */,
+				2A5980FB26254C4500C19E1A /* BoomAudioPlayerManager.swift in Sources */,
+				2A5980CA26254BE000C19E1A /* SceneDelegate.swift in Sources */,
+				2A59810026254DD500C19E1A /* BoomAudioPlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5980D626254BE200C19E1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5980DF26254BE200C19E1A /* BoomAudioPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5980E126254BE200C19E1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5980EA26254BE200C19E1A /* BoomAudioPlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A5980DC26254BE200C19E1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A5980C326254BE000C19E1A /* BoomAudioPlayer */;
+			targetProxy = 2A5980DB26254BE200C19E1A /* PBXContainerItemProxy */;
+		};
+		2A5980E726254BE200C19E1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A5980C326254BE000C19E1A /* BoomAudioPlayer */;
+			targetProxy = 2A5980E626254BE200C19E1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A5980CD26254BE000C19E1A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A5980CE26254BE000C19E1A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2A5980D226254BE100C19E1A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A5980D326254BE100C19E1A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A5980EC26254BE200C19E1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		2A5980ED26254BE200C19E1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A5980EF26254BE200C19E1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFX2H7N5ZA;
+				INFOPLIST_FILE = BoomAudioPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextbeginning.www.BoomAudioPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A5980F026254BE200C19E1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFX2H7N5ZA;
+				INFOPLIST_FILE = BoomAudioPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextbeginning.www.BoomAudioPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2A5980F226254BE200C19E1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AUU237XZLK;
+				INFOPLIST_FILE = BoomAudioPlayerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextbeginning.www.BoomAudioPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoomAudioPlayer.app/BoomAudioPlayer";
+			};
+			name = Debug;
+		};
+		2A5980F326254BE200C19E1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AUU237XZLK;
+				INFOPLIST_FILE = BoomAudioPlayerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextbeginning.www.BoomAudioPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoomAudioPlayer.app/BoomAudioPlayer";
+			};
+			name = Release;
+		};
+		2A5980F526254BE200C19E1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AUU237XZLK;
+				INFOPLIST_FILE = BoomAudioPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextbeginning.www.BoomAudioPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BoomAudioPlayer;
+			};
+			name = Debug;
+		};
+		2A5980F626254BE200C19E1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AUU237XZLK;
+				INFOPLIST_FILE = BoomAudioPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextbeginning.www.BoomAudioPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BoomAudioPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A5980BF26254BE000C19E1A /* Build configuration list for PBXProject "BoomAudioPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5980EC26254BE200C19E1A /* Debug */,
+				2A5980ED26254BE200C19E1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A5980EE26254BE200C19E1A /* Build configuration list for PBXNativeTarget "BoomAudioPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5980EF26254BE200C19E1A /* Debug */,
+				2A5980F026254BE200C19E1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A5980F126254BE200C19E1A /* Build configuration list for PBXNativeTarget "BoomAudioPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5980F226254BE200C19E1A /* Debug */,
+				2A5980F326254BE200C19E1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A5980F426254BE200C19E1A /* Build configuration list for PBXNativeTarget "BoomAudioPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5980F526254BE200C19E1A /* Debug */,
+				2A5980F626254BE200C19E1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A5980BC26254BE000C19E1A /* Project object */;
+}
